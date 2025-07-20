@@ -1,8 +1,11 @@
-# Tic Tac Toe (using HTML,CSS,JS)
+# 🎮 Tic Tac Toe (using HTML,CSS,JS)
 
-# 🎮 Tic Tac Toe
+
 
 A classic Tic Tac Toe game built using **HTML**, **CSS**, and **JavaScript**. Play against another player on the same device and enjoy a simple, responsive, and interactive design.
+
+[Play The Game Here](https://dhruvg308.github.io/Tic_Tac_Toe/)
+
 
 
 
@@ -26,6 +29,7 @@ You can try the game right now by opening the `index.html` file in your browser.
    git clone https://github.com/dhruvg308/Tic_Tac_Toe.git
    
 2. **Navigate to the project folder**
+   ```bash
    cd Tic_Tac_Toe
 
 
