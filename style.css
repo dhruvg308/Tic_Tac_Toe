@@ -52,3 +52,25 @@ body{
     text-align: center;
     margin: 5px;
     }
+
+#newGame{
+    padding: 0.3rem;
+    background-color: azure;
+    height: 2rem;
+    width: 5rem;
+    
+    border-radius: 1rem;
+    text-align: center;
+    margin: 5px;
+
+}
+
+#msg{
+    font-size: 8vmin;
+    color: rgb(1, 255, 242);
+    text-shadow: 2px 2px 1rem goldenrod;
+}
+
+.hide{
+    display: none;
+}

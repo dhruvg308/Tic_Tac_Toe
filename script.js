@@ -4,6 +4,9 @@
 
 let boxes = document.querySelectorAll(".box");
 let reset = document.querySelector("#reset");
+let newGameBtn = document.querySelector("#newGame");
+let msgContainer = document.querySelector(".msg-container");
+let msg = document.querySelector("#msg");
 
 let turnO = true;  //playerX  playerO 
 
@@ -40,6 +43,16 @@ function clicked(){
      
 }
 
+const showWinner=(winner)=>{
+    msg.innerText= `${winner}  WON!!!`;
+    msgContainer.classList.remove("hide");
+    reset.classList.add("hide");
+
+    for(let i of boxes){
+        i.disabled=true;
+    }
+}
+
 function checkWinner(){
    
 
@@ -57,7 +70,8 @@ function checkWinner(){
 
         if(pos1val != "" && pos2val != "" && pos3val != ""){
             if(pos1val === pos2val && pos2val === pos3val){
-                alert("winner found");
+                console.log("winner found",pos3val);
+                showWinner(pos3val);
                 
             }
         }
@@ -73,7 +87,22 @@ function resetGame(){
         box.disabled=false;
     });
     turnO=true;
+    msgContainer.classList.add("hide");
+    
+    
 }
+
+function newGame(){
+    boxes.forEach((box)=>{
+        box.innerText="";
+        box.disabled=false;
+    });
+    turnO=true;
+    msgContainer.classList.add("hide");
+    reset.classList.remove("hide");
+
+}
+
 
 
 
@@ -82,4 +111,4 @@ boxes.forEach((box)=> {
 });
 
 reset.addEventListener("click",resetGame);
-
+newGameBtn.addEventListener("click",newGame);

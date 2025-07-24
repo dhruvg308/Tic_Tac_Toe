@@ -32,7 +32,9 @@ You can try the game right now by opening the `index.html` file in your browser.
    ```bash
    cd Tic_Tac_Toe
 
-
+2. **Start Playing**
+   ```bash
+   start index.html
 
    
 
